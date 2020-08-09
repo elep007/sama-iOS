@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromotionListView" customModule="PSHotels" customModuleProvider="target">
+            <connections>
+                <outlet property="hotelListCollectionView" destination="z3G-aQ-jPS" id="HYI-T4-y6g"/>
+                <outlet property="nodataLabel" destination="dvA-OZ-zwF" id="fTk-u7-fPl"/>
+                <outlet property="nodataView" destination="b4C-aL-vxr" id="HY3-hI-6zx"/>
+                <outlet property="reloadButton" destination="Bim-my-NcP" id="Qdt-xQ-99W"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1gX-ad-F4S">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="z3G-aQ-jPS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewLayout key="collectionViewLayout" id="i8H-qf-BlI" customClass="PinterestLayout" customModule="PSHotels" customModuleProvider="target"/>
+                </collectionView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4C-aL-vxr">
+                    <rect key="frame" x="30" y="95" width="315" height="218"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoData" translatesAutoresizingMaskIntoConstraints="NO" id="r3W-cQ-2CZ">
+                            <rect key="frame" x="70" y="8" width="174" height="92"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="174" id="Sjt-Ux-yte"/>
+                                <constraint firstAttribute="height" constant="92" id="iAk-Ij-I6L"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something Wrong!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvA-OZ-zwF">
+                            <rect key="frame" x="8" y="116" width="299" height="20"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bim-my-NcP">
+                            <rect key="frame" x="8" y="156" width="299" height="32"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <state key="normal" title="Reload"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dvA-OZ-zwF" secondAttribute="trailing" constant="8" id="K0m-L9-fRz"/>
+                        <constraint firstItem="dvA-OZ-zwF" firstAttribute="top" secondItem="r3W-cQ-2CZ" secondAttribute="bottom" constant="16" id="QZu-3a-mMD"/>
+                        <constraint firstItem="Bim-my-NcP" firstAttribute="leading" secondItem="b4C-aL-vxr" secondAttribute="leading" constant="8" id="SAy-mf-B5j"/>
+                        <constraint firstItem="dvA-OZ-zwF" firstAttribute="leading" secondItem="b4C-aL-vxr" secondAttribute="leading" constant="8" id="Tsj-Xz-tYq"/>
+                        <constraint firstItem="r3W-cQ-2CZ" firstAttribute="centerX" secondItem="b4C-aL-vxr" secondAttribute="centerX" id="gVj-K9-3Tc"/>
+                        <constraint firstItem="Bim-my-NcP" firstAttribute="top" secondItem="dvA-OZ-zwF" secondAttribute="bottom" constant="20" id="jkQ-Mj-g7c"/>
+                        <constraint firstItem="r3W-cQ-2CZ" firstAttribute="top" secondItem="b4C-aL-vxr" secondAttribute="top" constant="8" id="w2T-Lo-kQB"/>
+                        <constraint firstAttribute="trailing" secondItem="Bim-my-NcP" secondAttribute="trailing" constant="8" id="w5r-cV-GWz"/>
+                        <constraint firstAttribute="bottom" secondItem="Bim-my-NcP" secondAttribute="bottom" constant="30" id="yfP-fA-I9v"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="b4C-aL-vxr" firstAttribute="top" secondItem="A7h-JQ-oBr" secondAttribute="top" constant="75" id="5eS-DN-A5p"/>
+                <constraint firstItem="A7h-JQ-oBr" firstAttribute="trailing" secondItem="z3G-aQ-jPS" secondAttribute="trailing" id="KWF-Fa-elD"/>
+                <constraint firstItem="A7h-JQ-oBr" firstAttribute="bottom" secondItem="z3G-aQ-jPS" secondAttribute="bottom" id="R9k-y4-gWv"/>
+                <constraint firstItem="z3G-aQ-jPS" firstAttribute="top" secondItem="1gX-ad-F4S" secondAttribute="top" id="ZZY-y3-ZET"/>
+                <constraint firstItem="b4C-aL-vxr" firstAttribute="leading" secondItem="A7h-JQ-oBr" secondAttribute="leading" constant="30" id="u9S-a5-M7M"/>
+                <constraint firstItem="A7h-JQ-oBr" firstAttribute="trailing" secondItem="b4C-aL-vxr" secondAttribute="trailing" constant="30" id="wno-Xi-m4k"/>
+                <constraint firstItem="z3G-aQ-jPS" firstAttribute="leading" secondItem="1gX-ad-F4S" secondAttribute="leading" id="xhM-lh-eWd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="A7h-JQ-oBr"/>
+            <point key="canvasLocation" x="87.5" y="59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NoData" width="200" height="151"/>
+    </resources>
+</document>

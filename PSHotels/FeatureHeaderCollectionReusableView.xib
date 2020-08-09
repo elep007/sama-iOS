@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FeatureHeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="FeatureHeaderCollectionReusableView" customModule="PSHotels" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYT-xW-zDq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pinterest-Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Isi-sn-9Ql">
+                            <rect key="frame" x="20" y="17" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="kDl-4M-rdT"/>
+                                <constraint firstAttribute="height" constant="25" id="q3r-f5-DNA"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Features Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9S-F8-0Cp">
+                            <rect key="frame" x="53" y="19.5" width="247" height="20"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgV-go-yTq">
+                            <rect key="frame" x="16" y="48" width="288" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="LUP-rU-OTv"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="G9S-F8-0Cp" firstAttribute="leading" secondItem="Isi-sn-9Ql" secondAttribute="trailing" constant="8" id="51y-UW-URq"/>
+                        <constraint firstItem="Isi-sn-9Ql" firstAttribute="top" secondItem="jYT-xW-zDq" secondAttribute="top" constant="17" id="Dqk-Hf-Q3T"/>
+                        <constraint firstAttribute="trailing" secondItem="G9S-F8-0Cp" secondAttribute="trailing" constant="20" id="Eex-q0-7Fi"/>
+                        <constraint firstAttribute="trailing" secondItem="pgV-go-yTq" secondAttribute="trailing" constant="16" id="PJB-1D-HMl"/>
+                        <constraint firstItem="pgV-go-yTq" firstAttribute="leading" secondItem="jYT-xW-zDq" secondAttribute="leading" constant="16" id="T6o-vu-4vs"/>
+                        <constraint firstItem="Isi-sn-9Ql" firstAttribute="leading" secondItem="jYT-xW-zDq" secondAttribute="leading" constant="20" id="b3H-Dq-KmA"/>
+                        <constraint firstItem="pgV-go-yTq" firstAttribute="top" secondItem="Isi-sn-9Ql" secondAttribute="bottom" constant="6" id="tHu-Jd-zRs"/>
+                        <constraint firstItem="G9S-F8-0Cp" firstAttribute="centerY" secondItem="Isi-sn-9Ql" secondAttribute="centerY" id="ys8-ei-FRr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jYT-xW-zDq" secondAttribute="bottom" constant="-1" id="LzL-m4-D79"/>
+                <constraint firstAttribute="trailing" secondItem="jYT-xW-zDq" secondAttribute="trailing" id="Nnr-9M-D67"/>
+                <constraint firstItem="jYT-xW-zDq" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="mQy-sJ-6F5"/>
+                <constraint firstItem="jYT-xW-zDq" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="s8t-w7-Yon"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="featureHeaderImage" destination="Isi-sn-9Ql" id="yDh-kR-Db3"/>
+                <outlet property="featureHeaderLabel" destination="G9S-F8-0Cp" id="nx4-dU-GXU"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="61.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="Pinterest-Icon" width="55" height="56"/>
+    </resources>
+</document>

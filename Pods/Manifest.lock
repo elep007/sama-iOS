@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Google-Mobile-Ads-SDK (7.24.0)
+  - HTagView (3.0.1)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+  - SVProgressHUD (2.2.1)
+  - SwiftRangeSlider (1.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - Google-Mobile-Ads-SDK
+  - HTagView
+  - SDWebImage (~> 4.1)
+  - SVProgressHUD (~> 2.2)
+  - SwiftRangeSlider
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Google-Mobile-Ads-SDK
+    - HTagView
+    - SDWebImage
+    - SVProgressHUD
+    - SwiftRangeSlider
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Google-Mobile-Ads-SDK: f405b7acb098fe89e6fcd05fdbf400c1a5bcb935
+  HTagView: de2694af9400d9ef7e8e2bb05da2481572a56257
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  SVProgressHUD: db27c54e6e18bc903341661fc9feb55e04905cc4
+  SwiftRangeSlider: fdaabc219e813d47f26525d9a56b6b5e5ba55b51
+
+PODFILE CHECKSUM: dc86aba63a742f65e5b3c663aa87861fd46fd4f2
+
+COCOAPODS: 1.9.1

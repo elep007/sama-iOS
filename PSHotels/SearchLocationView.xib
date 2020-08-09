@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchLocationView" customModule="PSHotels" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Fih-Nw-2Pj" id="FOf-Fs-ciD"/>
+                <outlet property="searchBar" destination="NzX-ja-Elv" id="dhD-AJ-7ft"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4oB-Ki-xM7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fih-Nw-2Pj">
+                            <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionViewLayout key="collectionViewLayout" id="VNs-hW-WyE" customClass="PinterestLayout" customModule="PSHotels" customModuleProvider="target"/>
+                            <cells/>
+                        </collectionView>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="NzX-ja-Elv">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="NzX-ja-Elv" firstAttribute="top" secondItem="4oB-Ki-xM7" secondAttribute="top" id="83T-1c-8NC"/>
+                        <constraint firstAttribute="trailing" secondItem="NzX-ja-Elv" secondAttribute="trailing" id="8aE-Wr-iaf"/>
+                        <constraint firstAttribute="trailing" secondItem="Fih-Nw-2Pj" secondAttribute="trailing" id="IwE-HX-lRm"/>
+                        <constraint firstAttribute="bottom" secondItem="Fih-Nw-2Pj" secondAttribute="bottom" id="Qbd-VQ-HYJ"/>
+                        <constraint firstItem="Fih-Nw-2Pj" firstAttribute="top" secondItem="NzX-ja-Elv" secondAttribute="bottom" id="WhR-8Z-XUo"/>
+                        <constraint firstItem="NzX-ja-Elv" firstAttribute="leading" secondItem="4oB-Ki-xM7" secondAttribute="leading" id="deF-pG-3Qt"/>
+                        <constraint firstItem="Fih-Nw-2Pj" firstAttribute="leading" secondItem="4oB-Ki-xM7" secondAttribute="leading" id="gCh-8f-WRe"/>
+                        <constraint firstItem="Fih-Nw-2Pj" firstAttribute="width" secondItem="4oB-Ki-xM7" secondAttribute="width" id="iDY-JV-BWM"/>
+                        <constraint firstAttribute="height" constant="667" id="u8h-YR-20v"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusForView">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4oB-Ki-xM7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HyD-9w-dNq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4oB-Ki-xM7" secondAttribute="bottom" id="dxL-cY-QNj"/>
+                <constraint firstItem="4oB-Ki-xM7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="twT-Id-ZkI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4oB-Ki-xM7" secondAttribute="trailing" id="vAw-Nt-hSi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InquiryView" customModule="PSHotels" customModuleProvider="target">
+            <connections>
+                <outlet property="contactEmail" destination="1py-ik-5qW" id="L4b-6M-jzE"/>
+                <outlet property="contactEmailTitleLabel" destination="Ymo-hi-vED" id="zvV-mc-KDh"/>
+                <outlet property="contactName" destination="G4z-zZ-W5z" id="KcQ-fE-aBN"/>
+                <outlet property="contactNameTitleLabel" destination="OCb-hY-Kng" id="o48-hM-0uY"/>
+                <outlet property="contactPhone" destination="Ugs-jb-Lik" id="WkS-Z5-xRC"/>
+                <outlet property="contactPhoneTitleLabel" destination="Gya-Ix-R7m" id="8wD-Yr-Uta"/>
+                <outlet property="inquiryMessageTextView" destination="agT-Op-b7U" id="Db2-3R-Py9"/>
+                <outlet property="inquiryMessageTitleLabel" destination="DUT-re-PkA" id="pmD-Mq-00P"/>
+                <outlet property="inquiryTitleLabel" destination="9u7-FR-LYz" id="gVU-Xf-pWm"/>
+                <outlet property="inquiryTitleTextField" destination="QIn-un-klD" id="kkV-kz-x6T"/>
+                <outlet property="submitButton" destination="rSL-YX-dAM" id="Szm-cV-K6Z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="n6a-bI-Zod">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G4z-zZ-W5z">
+                    <rect key="frame" x="16" y="40" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="name"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusForView">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1py-ik-5qW">
+                    <rect key="frame" x="16" y="110" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="email"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusForView">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ugs-jb-Lik">
+                    <rect key="frame" x="16" y="180" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusForView">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="agT-Op-b7U">
+                    <rect key="frame" x="16" y="320" width="343" height="162"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="162" id="h10-Te-ib4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusForView">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inquiry Message *" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUT-re-PkA">
+                    <rect key="frame" x="16" y="296" width="343" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gya-Ix-R7m">
+                    <rect key="frame" x="16" y="156" width="343" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Email *" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymo-hi-vED">
+                    <rect key="frame" x="16" y="86" width="343" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Name *" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCb-hY-Kng">
+                    <rect key="frame" x="16" y="16" width="343" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSL-YX-dAM">
+                    <rect key="frame" x="16" y="494" width="343" height="37"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="Tlx-QG-bf0"/>
+                    </constraints>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusForView">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="submitClicked:" destination="-1" eventType="touchUpInside" id="t3t-de-yLZ"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inquiry Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QIn-un-klD">
+                    <rect key="frame" x="16" y="250" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusForView">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inquiry Title *" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9u7-FR-LYz">
+                    <rect key="frame" x="16" y="226" width="343" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="G4z-zZ-W5z" firstAttribute="leading" secondItem="YMF-cj-gbg" secondAttribute="leading" constant="16" id="1wm-xD-9al"/>
+                <constraint firstItem="DUT-re-PkA" firstAttribute="top" secondItem="QIn-un-klD" secondAttribute="bottom" constant="16" id="9bS-nu-iAJ"/>
+                <constraint firstItem="YMF-cj-gbg" firstAttribute="trailing" secondItem="rSL-YX-dAM" secondAttribute="trailing" constant="16" id="9xi-qO-fsA"/>
+                <constraint firstItem="Ugs-jb-Lik" firstAttribute="leading" secondItem="YMF-cj-gbg" secondAttribute="leading" constant="16" id="Fcc-1L-0rH"/>
+                <constraint firstItem="1py-ik-5qW" firstAttribute="leading" secondItem="YMF-cj-gbg" secondAttribute="leading" constant="16" id="GSZ-pk-xnk"/>
+                <constraint firstItem="YMF-cj-gbg" firstAttribute="trailing" secondItem="Ugs-jb-Lik" secondAttribute="trailing" constant="16" id="IQu-dd-aGM"/>
+                <constraint firstItem="Ymo-hi-vED" firstAttribute="top" secondItem="G4z-zZ-W5z" secondAttribute="bottom" constant="16" id="Kr7-Jz-Hwd"/>
+                <constraint firstItem="OCb-hY-Kng" firstAttribute="leading" secondItem="YMF-cj-gbg" secondAttribute="leading" constant="16" id="MCo-9C-HMv"/>
+                <constraint firstItem="Ugs-jb-Lik" firstAttribute="top" secondItem="Gya-Ix-R7m" secondAttribute="bottom" constant="8" id="PZ4-We-iZh"/>
+                <constraint firstItem="QIn-un-klD" firstAttribute="leading" secondItem="YMF-cj-gbg" secondAttribute="leading" constant="16" id="SVf-gm-GNP"/>
+                <constraint firstItem="QIn-un-klD" firstAttribute="top" secondItem="9u7-FR-LYz" secondAttribute="bottom" constant="8" id="Xo0-N6-qkc"/>
+                <constraint firstItem="Gya-Ix-R7m" firstAttribute="top" secondItem="1py-ik-5qW" secondAttribute="bottom" constant="16" id="Yhe-Y4-gOz"/>
+                <constraint firstItem="9u7-FR-LYz" firstAttribute="top" secondItem="Ugs-jb-Lik" secondAttribute="bottom" constant="16" id="Ykx-P8-86Q"/>
+                <constraint firstItem="1py-ik-5qW" firstAttribute="top" secondItem="Ymo-hi-vED" secondAttribute="bottom" constant="8" id="adh-l8-MAn"/>
+                <constraint firstItem="YMF-cj-gbg" firstAttribute="trailing" secondItem="DUT-re-PkA" secondAttribute="trailing" constant="16" id="agf-Ka-pnp"/>
+                <constraint firstItem="YMF-cj-gbg" firstAttribute="trailing" secondItem="Ymo-hi-vED" secondAttribute="trailing" constant="16" id="ahQ-s6-Sqb"/>
+                <constraint firstItem="YMF-cj-gbg" firstAttribute="trailing" secondItem="1py-ik-5qW" secondAttribute="trailing" constant="16" id="boA-TC-v5I"/>
+                <constraint firstItem="OCb-hY-Kng" firstAttribute="top" secondItem="n6a-bI-Zod" secondAttribute="top" constant="16" id="cjo-YU-KqJ"/>
+                <constraint firstItem="DUT-re-PkA" firstAttribute="leading" secondItem="YMF-cj-gbg" secondAttribute="leading" constant="16" id="d9j-Bd-0bB"/>
+                <constraint firstItem="G4z-zZ-W5z" firstAttribute="top" secondItem="OCb-hY-Kng" secondAttribute="bottom" constant="8" id="diF-zG-VNg"/>
+                <constraint firstItem="rSL-YX-dAM" firstAttribute="leading" secondItem="YMF-cj-gbg" secondAttribute="leading" constant="16" id="e6I-QZ-E9d"/>
+                <constraint firstItem="YMF-cj-gbg" firstAttribute="trailing" secondItem="agT-Op-b7U" secondAttribute="trailing" constant="16" id="eFb-WL-ng8"/>
+                <constraint firstItem="YMF-cj-gbg" firstAttribute="trailing" secondItem="9u7-FR-LYz" secondAttribute="trailing" constant="16" id="eo9-sl-5kC"/>
+                <constraint firstItem="YMF-cj-gbg" firstAttribute="trailing" secondItem="Gya-Ix-R7m" secondAttribute="trailing" constant="16" id="jB7-ZN-MLB"/>
+                <constraint firstItem="YMF-cj-gbg" firstAttribute="trailing" secondItem="G4z-zZ-W5z" secondAttribute="trailing" constant="16" id="kAg-fx-UZ7"/>
+                <constraint firstItem="Ymo-hi-vED" firstAttribute="leading" secondItem="YMF-cj-gbg" secondAttribute="leading" constant="16" id="kZs-6r-FHG"/>
+                <constraint firstItem="agT-Op-b7U" firstAttribute="leading" secondItem="YMF-cj-gbg" secondAttribute="leading" constant="16" id="lUg-Er-WBk"/>
+                <constraint firstItem="9u7-FR-LYz" firstAttribute="leading" secondItem="YMF-cj-gbg" secondAttribute="leading" constant="16" id="nFj-oI-FDG"/>
+                <constraint firstItem="YMF-cj-gbg" firstAttribute="trailing" secondItem="QIn-un-klD" secondAttribute="trailing" constant="16" id="pjK-hy-npw"/>
+                <constraint firstItem="agT-Op-b7U" firstAttribute="top" secondItem="DUT-re-PkA" secondAttribute="bottom" constant="8" id="rQi-Sa-XpQ"/>
+                <constraint firstItem="Gya-Ix-R7m" firstAttribute="leading" secondItem="YMF-cj-gbg" secondAttribute="leading" constant="16" id="vTc-r9-8lK"/>
+                <constraint firstItem="YMF-cj-gbg" firstAttribute="trailing" secondItem="OCb-hY-Kng" secondAttribute="trailing" constant="16" id="vg3-Li-03Y"/>
+                <constraint firstItem="rSL-YX-dAM" firstAttribute="top" secondItem="agT-Op-b7U" secondAttribute="bottom" constant="12" id="xaP-BU-OyI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="YMF-cj-gbg"/>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

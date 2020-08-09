@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecommendedListView" customModule="PSHotels" customModuleProvider="target">
+            <connections>
+                <outlet property="hotelListCollectionView" destination="r1E-Fq-t88" id="IM5-Mb-uGw"/>
+                <outlet property="nodataLabel" destination="4Dv-Do-Ro7" id="1Wf-Py-cGy"/>
+                <outlet property="nodataView" destination="TFw-ws-4PF" id="MJW-uo-Ryg"/>
+                <outlet property="reloadButton" destination="ys4-Lk-tfG" id="JTu-FN-Lcm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VXt-gj-pOd">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="r1E-Fq-t88">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewLayout key="collectionViewLayout" id="8T8-BH-3Ks" customClass="PinterestLayout" customModule="PSHotels" customModuleProvider="target"/>
+                </collectionView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFw-ws-4PF">
+                    <rect key="frame" x="30" y="95" width="315" height="218"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoData" translatesAutoresizingMaskIntoConstraints="NO" id="BTI-Ze-oBb">
+                            <rect key="frame" x="70" y="8" width="174" height="92"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="174" id="GSs-CC-NQd"/>
+                                <constraint firstAttribute="height" constant="92" id="hPV-d0-XKF"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something Wrong!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dv-Do-Ro7">
+                            <rect key="frame" x="8" y="116" width="299" height="20"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys4-Lk-tfG">
+                            <rect key="frame" x="8" y="156" width="299" height="32"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <state key="normal" title="Reload"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="4Dv-Do-Ro7" firstAttribute="leading" secondItem="TFw-ws-4PF" secondAttribute="leading" constant="8" id="GGJ-En-qlU"/>
+                        <constraint firstItem="ys4-Lk-tfG" firstAttribute="top" secondItem="4Dv-Do-Ro7" secondAttribute="bottom" constant="20" id="Gec-p8-a0w"/>
+                        <constraint firstAttribute="trailing" secondItem="4Dv-Do-Ro7" secondAttribute="trailing" constant="8" id="KYj-cy-f8b"/>
+                        <constraint firstAttribute="trailing" secondItem="ys4-Lk-tfG" secondAttribute="trailing" constant="8" id="cHZ-Jk-d3i"/>
+                        <constraint firstItem="4Dv-Do-Ro7" firstAttribute="top" secondItem="BTI-Ze-oBb" secondAttribute="bottom" constant="16" id="d8J-fB-Smy"/>
+                        <constraint firstItem="ys4-Lk-tfG" firstAttribute="leading" secondItem="TFw-ws-4PF" secondAttribute="leading" constant="8" id="evW-Dy-H82"/>
+                        <constraint firstAttribute="bottom" secondItem="ys4-Lk-tfG" secondAttribute="bottom" constant="30" id="iQP-6V-2kX"/>
+                        <constraint firstItem="BTI-Ze-oBb" firstAttribute="top" secondItem="TFw-ws-4PF" secondAttribute="top" constant="8" id="ib7-wl-w5d"/>
+                        <constraint firstItem="BTI-Ze-oBb" firstAttribute="centerX" secondItem="TFw-ws-4PF" secondAttribute="centerX" id="v6A-47-TDl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kzs-pX-QzK" firstAttribute="trailing" secondItem="TFw-ws-4PF" secondAttribute="trailing" constant="30" id="1lu-sb-BQr"/>
+                <constraint firstItem="Kzs-pX-QzK" firstAttribute="bottom" secondItem="r1E-Fq-t88" secondAttribute="bottom" id="cG4-95-6DI"/>
+                <constraint firstItem="r1E-Fq-t88" firstAttribute="leading" secondItem="VXt-gj-pOd" secondAttribute="leading" id="dwk-YP-ZsG"/>
+                <constraint firstItem="TFw-ws-4PF" firstAttribute="leading" secondItem="Kzs-pX-QzK" secondAttribute="leading" constant="30" id="fYA-Ug-MCT"/>
+                <constraint firstItem="Kzs-pX-QzK" firstAttribute="trailing" secondItem="r1E-Fq-t88" secondAttribute="trailing" id="fdp-bx-Q1T"/>
+                <constraint firstItem="r1E-Fq-t88" firstAttribute="top" secondItem="VXt-gj-pOd" secondAttribute="top" id="iWf-2H-74i"/>
+                <constraint firstItem="TFw-ws-4PF" firstAttribute="top" secondItem="Kzs-pX-QzK" secondAttribute="top" constant="75" id="kWI-MO-uNV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Kzs-pX-QzK"/>
+            <point key="canvasLocation" x="87.5" y="59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NoData" width="200" height="151"/>
+    </resources>
+</document>
